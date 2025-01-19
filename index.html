@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Test Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Test Page for GREEN-API</h1>
+    <div class="container">
+        <div class="left-panel">
+            <label for="idInstance">idInstance:</label>
+            <input type="text" id="idInstance" placeholder="Введите idInstance"><br>
+
+            <label for="apiTokenInstance">ApiTokenInstance:</label>
+            <input type="text" id="apiTokenInstance" placeholder="Введите ApiTokenInstance"><br>
+
+            <button id="getSettings">getSettings</button>
+            <button id="getStateInstance">getStateInstance</button>
+            <br>
+            <label for="phoneNumber">Номер телефона:</label>
+            <input type="text" id="phoneNumber" placeholder="Введите номер телефона"><br>
+
+            <label for="message">Сообщение:</label>
+            <input type="text" id="message" placeholder="Введите текст сообщения"><br>
+            <button id="sendMessage">sendMessage</button>
+
+            <label for="fileUrl">URL файла:</label>
+            <input type="text" id="fileUrl" placeholder="Введите URL файла"><br>
+            <button id="sendFileByUrl">sendFileByUrl</button>
+        </div>
+
+        <div class="right-panel">
+            <h2>Ответ:</h2>
+            <pre id="response"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
